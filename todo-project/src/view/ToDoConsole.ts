@@ -56,7 +56,6 @@ class TodoConsole{
                     }else{
                         this.promptUser();
                     }
-                    break;
             }
         })
     }

@@ -26,7 +26,7 @@ class TodoCollection{
     }
 
     //includeComplete -> true : 모든 할일 목록을 반환
-    //includeComplete -> false : 완료 목록은 제외한 할일 목록 반환
+    //includeComplete -> false : 완료 목록을 제외한 할일 목록 반환
     getTodoItems(includeComplete:boolean):TodoItem[]{
         return[...this.itemMap.values()].filter(
             (item) => includeComplete || !item.complete
